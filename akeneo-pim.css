@@ -1,0 +1,49 @@
+/*
+ * Akeneo PIM Contrast
+ * Applies to *.cloud.akeneo.com
+ */
+
+/* add some contrast to text and labels */
+body {
+    color: #213c !important;
+}
+
+div[role="menu"] > div > div > div > div > div,
+nav[aria-label="Breadcrumb"] a,
+div[class*="ColumnTitle"],
+label,
+.AknFilterBox-filterLabel,
+.AknColumn-subtitle {
+    color: #2139 !important;
+}
+
+/* add background to invisible buttons */
+.AknActionButton--withoutBorder {
+    background-color: rgb(238, 239, 251, .5) !important;
+    padding: .0 1rem !important;
+}
+
+/* enlargen critical UI elements */
+.association-type-selector > a.AknActionButton--important {
+    font-size: 1.7rem !important;
+    height: 2.1rem !important;
+    padding-top: .3rem !important;
+    text-transform: none !important;
+}
+
+.AknTitleContainer-variantSelector > .AknActionButton {
+    font-size: 1.2rem !important;
+    height: 1.5rem !important;
+}
+
+/* add background to invisible search input fields */
+.AknTitleContainer-search:not(:empty) {
+    /*  border: none;*/
+}
+
+input[placeholder^="Search"] {
+    height: 2.7rem !important;
+    border-bottom: none !important;
+    /*  border: 1px solid #ccd1d8; */
+    background-color: rgb(238, 239, 251, .3) !important;
+}

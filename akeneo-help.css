@@ -1,0 +1,9 @@
+/*
+ * Akeneo Help Contrast
+ * Applies to help.akeneo.com
+ */
+
+body {
+  font-weight: 400 !important;
+  color: #484e5a !important;
+}

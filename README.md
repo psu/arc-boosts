@@ -1,4 +1,4 @@
 # Arc Boosts
 
 ## List of Boosts
-- Tana WF-ish Dark Theme (tana.css)
+- Tana WF-ish Dark Theme ([tana.css](https://github.com/psu/arc-boosts/blob/main/tana.css))

@@ -1,0 +1,17 @@
+/*
+ * Inriver Community Font
+ * Applies to community.inriver.com
+ */
+ 
+.article__body p,
+.article__body ul li,
+.article__body ol li,
+.article__body h1,
+.article__body h2,
+.article__body h3,
+.striped-list-title,
+.post-title h1,
+.post-content,
+.comment-body {
+    font-family: Helvetica !important;
+}

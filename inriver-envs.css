@@ -1,0 +1,95 @@
+/*
+ * Inriver Environments Re-design
+ * Applies to *.productmarketingcloud.com/app/environment
+ */
+
+body, 
+.environment-selection {
+    background-image: url() !important;
+}
+body {
+    background: linear-gradient(180deg, #f99f26, #fce175) !important;
+    font-family: Helvetica, Arial !important;
+}
+.environment-selection__grid {
+    padding-top: 75px !important;
+    display: grid !important;
+    justify-content: center !important;
+    grid-column-gap: 20px !important;
+    grid-row-gap: 20px !important;
+    min-height: 0 !important;
+}
+@media(min-width: 768px) {
+    .environment-selection__grid {
+        grid-template-columns: 600px !important;
+    }
+    .environment-card {
+        width: 600px !important;
+    }
+}
+@media(min-width: 640px) and (max-width: 786px) {
+    .environment-selection__grid {
+        grid-template-columns: 100% !important;
+    }
+    .environment-card {
+        width: 100% !important;
+    }
+}
+@media(max-width: 640px) {
+    .environment-selection__grid {
+        grid-template-columns: 100% !important;
+    }
+    .environment-card {
+        width: 100% !important;
+    }
+}
+.environment-card {
+    height: auto !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid rgba(200, 200, 200, .3) !important;
+    border-radius: 8px !important;
+}
+.environment-card:hover,
+.environment-card:focus {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.environment-card__environment-type-wrapper {
+    display: block !important;
+    float: right !important;
+    height: auto !important;
+    flex-wrap: nowrap !important;
+    flex-direction: row-reverse !important;
+}
+.environment-card__customer-name {
+    background-color: transparent !important;
+    height: auto !important;
+    top: 0 !important;
+    bottom: inherit !important;
+    line-height: 22px !important;
+    font-size: 13px !important;
+    padding: 10px !important;
+}
+.environment-card__customer-name,
+.environment-card__environment-type {
+    overflow: auto !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    text-align: left !important;
+    width: fit-content !important;
+    line-height: 25px !important;
+    font-size: 18px !important;
+    padding: 16px !important;
+}
+.environment-card__customer-name {
+    color: rgba(0, 0, 0, 0.7) !important;
+    font-weight: bold !important;
+}
+.environment-card__environment-type {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+.environment-selection__change {
+    height: auto !important;
+    font-size: 18px !important;
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border-radius: 8px !important;
+}

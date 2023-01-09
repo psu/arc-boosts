@@ -3,6 +3,8 @@
  * Applies to app.tana.inc
  */
 
+/* specific mods */
+
 /* layout button */
 div[data-panel-id="sidepanel"] button {
   color: rgb(158, 161, 162);
@@ -10,160 +12,56 @@ div[data-panel-id="sidepanel"] button {
 div[data-panel-id="sidepanel"] button:hover {
   color: rgb(217, 219, 219);
 }
+/* header fix */
+header {
+  /*border-top: none!important;*/
+  /*box-shadow: none!important;*/
+}
+header > div,
+header div[class^="TopBar-module_separator"] {
+  border-left: none!important;
+}
+input[id="searchquery"],
+div[class^="TopBar-module_searchBarContainer"] {
+  border-radius: 1rem!important;
+}
 
 html.isDarkMode {
-  /* main bg */
-  --colorGray825: rgb(42, 49, 53);
-  /* sidebar */
-  --colorGray875: rgb(53, 60, 63);
-  /* sidebar nav */
-  --colorGray375: rgb(158, 161, 162);
-  /* sidebar headers */
-  --colorGray475: rgb(217, 219, 219);
-  /* cards */
-  --colorGray750: rgb(53, 60, 63);
+  /* base color mods */
+
   /* main text */
   --colorGray300: white;
-  /* sidebar nav hover */
-  --colorGray800: rgb(66, 73, 75);
-  /* layout button */
-  --colorGray775: rgb(66, 73, 75);
+  /* sidebar nav */
+  --colorGray375: rgb(175, 179, 180);
+  /* sidebar headers */
+  --colorGray475: rgb(217, 219, 219);
   /* bullet mid */
   --colorGray500: rgb(158, 161, 162);
+  /* card hover */
+  --colorGray600:rgb(66, 73, 75);
   /* bullet ring */
   --colorGray675: rgb(53, 60, 63);
+  /* check box */
+  --colorGray700: rgb(53, 60, 63);
   /* chevron bg */
   --colorGray725: rgb(53, 60, 63);
+  /* cards */
+  --colorGray750: rgb(53, 60, 63);
+  /* layout button */
+  --colorGray775: rgb(66, 73, 75);
+  /* sidebar nav hover */
+  --colorGray800: rgb(66, 73, 75);
+  /* main bg */
+  --colorGray825: rgb(42, 49, 53);
+  /* tag config bg */
+  --colorGray850: rgb(42, 49, 53);
+  /* sidebar */
+  --colorGray875: rgb(53, 60, 63);
+  /* search box bg */
+  --colorGray925: rgb(42, 49, 53);
 
+  /* specific color mods */
+  --colorTopBarBackground: var(--colorGray875)!important;
+  --colorReferenceSectionGradientStep: rgb(47, 53, 56)!important;
 
-  /* org */
-  --colorEditorText: var(--colorGray300);
-  --colorUIText: var(--colorGray375);
-  --colorUITextMuted: var(--colorGray475);
-  --colorUITextDisabled: var(--colorGray550);
-  --colorUITextPlaceholder: var(--colorUITextDisabled);
-  --colorUIStroke: var(--colorGray700);
-  --colorUIStrokeHover: var(--colorGray600);
-  --colorUIStrokeSoft: var(--colorGray725);
-  --colorUIBackgroundDisabled: var(--colorGray725);
-  --colorUIListItemHovered: var(--colorGray800);
-  --colorUIListItemFocused: var(--colorBlue650);
-  --colorUIConfigBackground: var(--colorBlue900);
-  --colorUIConfigBorder: var(--colorBlue750);
-  --colorUIConfigTitle: var(--colorBlue250);
-  --colorUITupleStroke: var(--colorGray700);
-  --colorUITupleFocusBackground: var(--colorGray850);
-  --colorFocus: var(--colorBlue500);
-  --colorFocusText: var(--colorBlue400);
-  --colorSelected: var(--colorBlue750);
-  --colorLink: var(--colorBlue250);
-  --colorNotification: var(--colorBlue500);
-  --colorNotificationStrong: var(--colorRed600);
-  --colorTopBarBackground: var(--colorPanelBackground);
-  --colorPanelBackground: var(--colorGray825);
-  --colorPanelBackgroundTransparent: rgba(28, 29, 36, 0);
-  --colorUIContextMenuBackground: var(--colorGray750);
-  --colorUICardBackground: var(--colorUIContextMenuBackground);
-  --colorUISERPBackground: var(--colorCanvasBackground);
-  --colorCanvasBackground: var(--colorGray875);
-  --colorUITableFooterBackground: var(--colorGray825);
-  --colorUICommandLineInput: var(--colorGray850);
-  --colorUIDiffIndicator: var(--colorYellow400);
-  --colorUIIntroCanvasBackground: var(--colorGray825);
-  --colorSidebarFloatingBackground: var(--colorCanvasBackground);
-  --colorSidebarDockedBackground: var(--colorCanvasBackground);
-  --colorSidebarItemHoverText: white;
-  --colorSidebarItemHoverBackground: var(--colorGray800);
-  --colorSidebarItemChevronHoverBackground: var(--colorGray725);
-  --colorSidebarPinnedEmptyBackground: var(--colorGray950);
-  --colorUIDropAreaBackground: var(--colorBlue700);
-  --colorUIDropAreaBackgroundHover: var(--colorBlue600);
-  --colorUIDropAreaBorder: var(--colorBlue400);
-  --colorUIDropAreaText: var(--colorBlue300);
-  --colorBulletDefaultFill: var(--colorGray500);
-  --colorBulletDefaultOutline: var(--colorGray675);
-  --colorBulletExpandLine: var(--colorGray675);
-  --colorBulletExpandLineReference: var(--colorGray625);
-  --colorBulletExpandLineHoverBackground: var(--colorGray750);
-  --bulletColor1LinkUnderline: var(--colorGray575);
-  --bulletColor1LinkBackground: var(--templateColorDimmed);
-  --templateColor: var(--colorGray475);
-  --templateColorDimmed: var(--colorGray725);
-  --colorConfigAccent: var(--colorGray800);
-  --colorConfigStroke: var(--colorGray700);
-  --colorConfigBackground: var(--colorGray775);
-  --colorConfigEditorBackground: var(--colorPanelBackground);
-  --colorUIConfigTupleFocusBackground: var(--colorPurple950);
-  --colorConfigPanelInputStroke: var(--colorGray900);
-  --colorConfigPanelToolbarText: var(--colorGray300);
-  --colorConfigPanelToolbarTextMuted: var(--colorGray400);
-  --colorConfigPanelLabelText: var(--colorGray400);
-  --colorConfigPanelHelpText: var(--colorGray400);
-  --colorPanelToolbarHover: var(--colorGray775);
-  --colorToggleBackground: var(--colorGray650);
-  --colorToggleForeground: var(--colorGray300);
-  --colorToggleCheckedBackground: var(--colorGreen550);
-  --colorReferenceSectionGradientStep: var(--colorGray775);
-  --colorReferenceMentionBackground: var(--colorGray825);
-  --colorTableCellCanonicalBackground: #32323d40;
-  --colorTableHeaderContextualContentHoverBackground: var(--colorPanelBackground);
-  --colorTableHeaderCanonicalContentHoverBackground: var(--colorGray775);
-  --colorChatInput: var(--colorBlue750);
-  --colorRefsExpandedInline: var(--colorGray825);
-  --colorWorkspaceAvatarBackground: var(--colorGray550);
-  --colorWorkspaceAvatarForeground: var(--colorGray250);
-  --colorSystemNode: var(--colorPurple250);
-  --colorSystemNodeBackground: var(--colorPurple900);
-  --colorUIInfoBackground: var(--colorBlue900);
-  --colorUIInfoText: var(--colorBlue200);
-  --colorUIInfoIconFill: var(--colorBlue400);
-  --colorUIInfoIconBackground: var(--colorBlue700);
-  --colorUISuccessBackground: var(--colorGreen800);
-  --colorUISuccessText: var(--colorGreen200);
-  --colorUISuccessIconFill: var(--colorGreen400);
-  --colorUISuccessIconBackground: var(--colorGreen700);
-  --colorUIWarningBackground: var(--colorYellow700);
-  --colorUIWarningText: var(--colorYellow100);
-  --colorUIWarningIconFill: var(--colorYellow300);
-  --colorUIWarningIconBackground: var(--colorYellow800);
-  --colorUIErrorBackground: var(--colorRed800);
-  --colorUIErrorText: var(--colorRed200);
-  --colorUIErrorIconFill: var(--colorRed400);
-  --colorUIErrorIconBackground: var(--colorRed700);
-  --colorUIGuidanceBackground: var(--colorGreen900);
-  --colorUIGuidanceStroke: var(--colorGreen850);
-  --colorUIGuidanceText: var(--colorUIText);
-  --colorUIGuidanceTitle: #e87a4e;
-  --colorUIGuidanceIconFill: #e87a4e;
-  --colorUIGuidanceIconBackground: var(--colorGreen800);
-  --colorUINodeStateIncoming: var(--colorGreen800);
-  --colorUINodeStateOutgoing: var(--colorRed800);
-  --colorUINodeStateFrozen: var(--colorYellow800);
-  --colorUIButtonDefaultStroke: var(--colorGray600);
-  --colorUIButtonDefaultStrokeHover: var(--colorGray500);
-  --colorUIButtonDefaultBackground: var(--colorGray775);
-  --colorUIButtonActiveBackground: var(--colorBlue800);
-  --colorUIButtonActiveStroke: var(--colorBlue700);
-  --colorUIButtonActiveStrokeHover: var(--colorBlue600);
-  --colorUIButtonActiveText: var(--colorBlue400);
-  --colorUIButtonAffirmativeBackground: var(--colorGreen400);
-  --colorUIButtonAffirmativeStroke: var(--colorGreen500);
-  --colorUIButtonAffirmativeStrokeHover: var(--colorGreen350);
-  --colorUIButtonAffirmativeText: var(--colorGreen900);
-  --colorUIButtonAffirmativeTextOnly: var(--colorGreen400);
-  --colorUIButtonDestructiveStroke: var(--colorRed700);
-  --colorUIButtonDestructiveStrokeHover: var(--colorRed600);
-  --colorUIButtonDestructiveText: var(--colorRed550);
-  --colorUIButtonSuggestionIcon: var(--colorYellow300);
-  --colorUIButtonSuggestionText: var(--colorYellow300);
-  --colorUIButtonSuggestionStroke: var(--colorYellow600);
-  --colorUIButtonSuggestionStrokeHover: var(--colorYellow500);
-  --colorUIButtonCommitBackground: var(--colorYellow850);
-  --colorUIButtonCommitText: var(--colorYellow400);
-  --colorUIButtonCommitStroke: var(--colorYellow750);
-  --colorUIButtonCommitStrokeHover: var(--colorYellow650);
-  --colorUICalendarDateHasNodes: var(--colorBlue800);
-  --colorUICalendarHover: var(--colorGray675);
-  --colorUICalendarSelectedBackground: var(--colorGray725);
-  --colorUICalendarSelectedText: var(--colorGray300);
 }

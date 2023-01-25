@@ -1,0 +1,61 @@
+/*
+ * Akeneo PIM View Selector
+ * Applies to *.cloud.akeneo.com
+ */
+
+
+/* restyle view selector div */
+.AknColumn-innerTop[data-drop-zone="navigation"]
+div[data-drop-zone="view-selector"]
+{
+  position: fixed;
+  width: 200%;
+  background: #F9F9FB;
+  top: 0;
+  min-height: none !important;
+}
+
+/* reduce height of view selector */
+.AknColumn-innerTop[data-drop-zone="navigation"]
+div[data-drop-zone="view-selector"] 
+.AknColumn-block--inline
+{
+  margin-top: 8px !important;
+  height: 23px !important;
+}
+
+/* keep navigation content in place */ 
+.AknColumn-innerTop[data-drop-zone="navigation"]
+div[data-drop-zone="column-context-switcher"]
+{
+  margin-top: 71px;
+}
+
+/* move down main content */
+.AknDefault-mainContent {
+  padding-top: 31px!important;
+}
+
+/* remove ellipse effect */ 
+.grid-view-selector .select2-container .select2-choice > .select2-chosen .current {
+  max-width: 90vw !important;
+}
+
+/* re-position action menu */ 
+.AknColumn-innerTop[data-drop-zone="navigation"]
+div[data-drop-zone="view-selector"] 
+.AknColumn-value {
+  flex-grow: 0 !important;
+}
+.AknColumn-innerTop[data-drop-zone="navigation"]
+div[data-drop-zone="view-selector"] 
+.AknColumn-blockDropdown {
+  flex-grow: 1 !important;
+}
+
+/* increase emphasis on the view title */
+.AknColumn-innerTop[data-drop-zone="navigation"]
+div[data-drop-zone="view-selector"] 
+.AknColumn-subtitle {
+  font-size: 13px !important;
+}
